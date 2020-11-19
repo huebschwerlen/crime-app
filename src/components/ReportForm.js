@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const ReportForm = () => {
+const ReportForm = (props) => {
   const initialFieldValues = {
     name: "",
     location: "",
@@ -11,15 +11,20 @@ const ReportForm = () => {
   var [values, setValues] = useState(initialFieldValues);
 
   const handleInputChange = (e) => {
-    var { report, value } = e.target;
+    var { name, value } = e.target;
     setValues({
       ...values,
-      [report]: value,
+      [name]: value,
     });
   };
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    props.addOrEdit(values);
+  };
+
   return (
-    <form autoComplete="off">
+    <form autoComplete="off" onSubmit={handleFormSubmit}>
       <div className="form-group input-group">
         <div className="input-group-prepend">
           <div className="input-group-text">
