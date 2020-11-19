@@ -6,7 +6,7 @@ const Reports = () => {
     <>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Report Crime</h1>
+          <h1 class="display-4 text-center">Report Crime</h1>
         </div>
       </div>
       <div className="row">
