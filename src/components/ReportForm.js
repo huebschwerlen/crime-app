@@ -10,11 +10,22 @@ const ReportForm = (props) => {
 
   var [values, setValues] = useState(initialFieldValues);
 
+  useEffect(() => {
+    if (props.currentId === "")
+      setValues({
+        ...initialFieldValues,
+      });
+    else
+      setValues({
+        ...props.reportObjects[props.currentId],
+      });
+  }, [props.currentId, props.reportObjects]);
+
   const handleInputChange = (e) => {
     var { name, value } = e.target;
     setValues({
       ...values,
-      [name]: value,
+      [name]: value, //have to use 'name'
     });
   };
 
@@ -85,7 +96,7 @@ const ReportForm = (props) => {
       <div className="form-group">
         <input
           type="submit"
-          value="Save"
+          value={props.currentId === "" ? "Save" : "Update"}
           className="btn btn-primary btn-block"
         />
       </div>
