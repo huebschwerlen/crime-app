@@ -19,7 +19,7 @@ const ReportForm = (props) => {
       setValues({
         ...props.reportObjects[props.currentId],
       });
-  }, [props.currentId, props.reportObjects]);
+  }, [props.currentId, props.reportObjects, initialFieldValues]);
 
   const handleInputChange = (e) => {
     var { name, value } = e.target;

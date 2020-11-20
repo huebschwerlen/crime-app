@@ -71,6 +71,7 @@ const Reports = () => {
                     <td>{reportObjects[id].title}</td>
                     <td>
                       <a
+                        href="/#"
                         className="btn text-primary"
                         onClick={() => {
                           setCurentId();
@@ -79,6 +80,7 @@ const Reports = () => {
                         <i className="fas fa-pencil-alt"></i>
                       </a>
                       <a
+                        href="/#"
                         className="btn text-danger"
                         onClick={() => {
                           onDelete(id);
