@@ -3,8 +3,8 @@ import ReportForm from "./ReportForm";
 import firebaseDb from "../firebase";
 
 const Reports = () => {
-  var [reportObjects, setReportObjects] = useState({});
   var [currentId, setCurentId] = useState("");
+  var [reportObjects, setReportObjects] = useState({});
 
   useEffect(() => {
     firebaseDb.child("reports").on("value", (snapshot) => {
@@ -71,7 +71,7 @@ const Reports = () => {
                     <td>{reportObjects[id].title}</td>
                     <td>
                       <a
-                        href="/#"
+                        href="#!"
                         className="btn text-primary"
                         onClick={() => {
                           setCurentId();
@@ -80,7 +80,7 @@ const Reports = () => {
                         <i className="fas fa-pencil-alt"></i>
                       </a>
                       <a
-                        href="/#"
+                        href="#!"
                         className="btn text-danger"
                         onClick={() => {
                           onDelete(id);

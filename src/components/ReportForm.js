@@ -1,12 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 const ReportForm = (props) => {
+  //eslint-disable-next-line react-hooks/exhaustive-deps
   const initialFieldValues = {
     name: "",
     location: "",
     title: "",
     crime: "",
   };
+
+  // const initialFieldValues = useMemo(() => {
+  //   return {
+  //     name: "",
+  //     location: "",
+  //     title: "",
+  //     crime: "",
+  //   };
+  // }, []);
 
   var [values, setValues] = useState(initialFieldValues);
 
@@ -19,7 +29,9 @@ const ReportForm = (props) => {
       setValues({
         ...props.reportObjects[props.currentId],
       });
-  }, [props.currentId, props.reportObjects, initialFieldValues]);
+  }, [initialFieldValues, props.currentId, props.reportObjects]);
+  //[props.currentId, props.reportObjects]
+  //[initialFieldValues, props.currentId, props.reportObjects]
 
   const handleInputChange = (e) => {
     var { name, value } = e.target;
