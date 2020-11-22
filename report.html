@@ -14,21 +14,15 @@
 
         <!-- HEADER START -->
         <div class="grid-item header">
-
+            <!-- LOGO -->
             <div class="logo">Philly Lookout</div>
 
+            <!-- NAV BAR -->
             <div class="nav">
                 <a class="nav-e" href="">Report</a>
                 <a class="nav-e" ref="">About</a>
                 <a class="nav-e" href="">Contact</a>
-
-
             </div>
-
-
-
-
-
 
         </div>
         <!-- HEADER END -->
@@ -63,6 +57,7 @@
                     <form class="actform" id="actform" action="" method="post">
 
 
+<<<<<<< Updated upstream
                         <ul>
                             <li>
                                 <label for="name" class="nameLabel">NAME/ALIAS?:</label>
@@ -74,17 +69,32 @@
                             </li>
                             <li>
                                 <label for="message" class="msgLabel">DESCRIPTION:</label>
+=======
+>>>>>>> Stashed changes
 
-                                <textarea name="msgInput" id="messageInput">
+                        <p>
+                            <!-- NAME FIELD -->
+                            <label for="name" class="nameLabel">NAME/ALIAS?:</label>
+                            <input type="text" id="nameinput" name="nameInput">
+                        </p>
+                        <p>
+                            <!-- LOCATION FIELD -->
+                            <label for="location" class="locationLabel">LOCATION:</label>
+                            <input type="text" id="locationInput" name="nameInput">
+                        </p>
+                        <p>
+                            <!-- MESSAGE FIELD -->
+                            <label for="message" class="msgLabel">DESCRIPTION:</label>
+                            <textarea name="msgInput" id="messageInput" rows="5">
                                     what did you see
                                 </textarea>
-                            </li>
-                            <li>
-                                <button type="submit">Send your message</button>
-                            </li>
+                        </p>
+                        <p>
+                            <button type="submit">Send your message</button>
+                        </p>
 
 
-                        </ul>
+
 
 
 
