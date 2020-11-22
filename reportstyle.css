@@ -29,4 +29,15 @@
   display: grid;
 }
 
+.actform p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4%;
+  padding: 5%;
+}
+
+.actform button {
+  grid-column: 2/3;
+}
+
 /* CONTENT END */
