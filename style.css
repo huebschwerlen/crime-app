@@ -91,3 +91,17 @@ body {
   grid-row: 2/3;
 }
 /* CONTENT END */
+
+/* FOOTER START */
+.footer {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.copy {
+  border: 1px solid white;
+  grid-column: 2/3;
+  /* height: 50px; */
+}
+/* FOOTER END */
