@@ -70,3 +70,24 @@ body {
   padding-top: 26px;
 }
 /* HEADER END */
+
+/* CONTENT START */
+.content {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.map {
+  grid-row: 1/-1;
+}
+.comfeed {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.apifeed {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+/* CONTENT END */
