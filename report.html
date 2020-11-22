@@ -59,13 +59,14 @@
 
                 <!-- FORM START -->
                 <div class="grid-item form">ACTUAL FORM
-                    <form class="actform" action="" method="post">
+                    <!-- Added id to form **HH-->
+                    <form class="actform" id="actform" action="" method="post">
 
 
                         <ul>
                             <li>
                                 <label for="name" class="nameLabel">NAME/ALIAS?:</label>
-                                <input type="text" id="nameinput" name="nameInput">
+                                <input type="text" id="nameInput" name="nameInput">
                             </li>
                             <li>
                                 <label for="location" class="locationLabel">LOCATION:</label>
@@ -120,7 +121,10 @@
 
 
     </div>
-
+    <!--Added scripts for firebase and report.js **HH -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+    <script src="report.js"></script>
 </body>
 
 </html>
