@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crime</title>
     <link rel="stylesheet" href="indexstyle.css">
+
+    <script src="http://vizw.it/scripts/vizwit-embed.js"></script>
+
 </head>
 
 <body>
@@ -31,10 +34,26 @@
         <div class="grid-item content">
 
             <!-- MAP -->
-            <div class="grid-item map">MAP</div>
+            <div class="grid-item map">MAP
+                <div style="
+        border: 3px solid rgb(201, 0, 1);
+        overflow: hidden;
+        margin: 15px auto;
+        max-width: 736px;
+      ">
+                    <iframe scrolling="no" src="https://data.phila.gov/visualizations/crime-incidents" style="
+          border: 0px none;
+          margin-left: -900px;
+          height: 850px;
+          margin-top: -600px;
+          width: 1900px;
+        ">
+                    </iframe>
+                </div>
+            </div>
             <!-- API FEED -->
             <div class="grid-item apifeed">API FEED
-                
+
             </div>
             <!-- COMMUNITY FEED -->
             <div class="grid-item comfeed">COMMUNITY FEED </div>
