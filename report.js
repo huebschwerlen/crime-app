@@ -1,4 +1,4 @@
-//connect to firebase
+//connect to firebase and initialize 
 const config = {
     apiKey: "AIzaSyB9NH7NAXsAgQWmE8KUZhFQ-8ahWx8wXo4",
     authDomain: "crimeapp-68fa6.firebaseapp.com",
@@ -12,29 +12,26 @@ const config = {
  firebase.initializeApp(config);
  var reportsRef = firebase.database().ref('reports');
 
-
- //Add listener for form submit
+ //Add listener for submitting form
 document.getElementById('actform').addEventListener('submit', submitReport);
 
+//Function to submit and save reports
 function submitReport(event) {
     event.preventDefault();
 
-    //get input
     var name = getInput('nameInput');
     var location = getInput('locationInput');
     var message = getInput('messageInput');
 
-    console.log(name);
-
     saveReports(name, location, message);
 }
 
-//Get the report input
+//Function to get report inputs
 function getInput(id){
     return document.getElementById(id).value;
 }
 
-//function to save the reports to firebase
+//Function to save the reports to firebase
 function saveReports(name, location, message){
     var newReportsRef = reportsRef.push();
     newReportsRef.set({
