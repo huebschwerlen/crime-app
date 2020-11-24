@@ -8,14 +8,14 @@
   grid-template-rows: 1fr 1fr;
 }
 
-.map {
+.pic2 {
   grid-row: 1/-1;
 }
-.comfeed {
+.contactinfo {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.apifeed {
+.pic1 {
   grid-column: 2/3;
   grid-row: 2/3;
 }

@@ -1,5 +1,6 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Raleway", sans-serif;
 }
 
 *,
@@ -10,7 +11,7 @@
 
 html,
 body {
-  background-color: #63c3eb;
+  background-color: #607694;
   height: 100%;
   margin: 0;
 }
@@ -20,13 +21,13 @@ body {
   font-size: 25px;
   padding: 0.5%;
   margin: 0.5%;
-  background-color: #b9e9ff;
+  background-color: #d9e9ff;
   /* color: #222; */
-  border: 1px solid #d9cfc1;
+  border: 1px solid #607694;
 }
 
 .grid-item:nth-child(odd) {
-  background-color: #fffce7;
+  background-color: #e0cda8;
 }
 
 .body-container {
@@ -52,6 +53,9 @@ body {
 .logo {
   grid-column: 1/2;
   border: 1px solid white;
+  font-family: "Niconne", cursive;
+  font-size: 2em;
+  text-decoration: none;
 }
 
 .nav {
@@ -62,6 +66,13 @@ body {
 
 .nav-e {
   border: 1px solid white;
+  text-decoration: none;
+}
+
+.nav-e:hover {
+  border: 1px solid white;
+  text-emphasis: bold;
+  /* text-decoration: none; */
 }
 /* HEADER END */
 
