@@ -38,8 +38,7 @@
 
 .actform button {
   grid-column: 2/3;
+  font-weight: 600;
 }
-
-
 
 /* CONTENT END */
