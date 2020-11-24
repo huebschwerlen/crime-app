@@ -24,6 +24,7 @@ function submitReport(event) {
     var message = getInput('messageInput');
 
     saveReports(name, location, message);
+
 }
 
 //Function to get report inputs
@@ -40,3 +41,6 @@ function saveReports(name, location, message){
         message: message
     })
 }
+
+function myFunction() {
+    alert("Your crime has been reported!"); }

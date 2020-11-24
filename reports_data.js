@@ -10,23 +10,34 @@ const config = {
   };
 
  firebase.initializeApp(config);
- let reportsRef = firebase.database().ref('reports');
 
+const results = document.getElementById("repres");
+
+ let reportsRef = firebase.database().ref('reports');
  reportsRef.on('value', readReports, errorReports);
 
- function readReports(data) {
-     let reports = data.val();
-     let keys = Object.keys(reports);
 
-     for(let i = 0; i < keys; ++i) {
-        let j = keys[i];
-        let name = reports[k].name;
-        let location = reports[k].location;
-        let message = reports[k].message;
-        console.log(name, location, message);
+
+ function readReports(data) {
+
+     var reports = data.val();
+     var keys = Object.keys(reports);
+
+    for(var i = 0; i < keys.length; ++i) {
+        const newItem = document.createElement("P");
+
+        var j = keys[i];
+        var name = reports[j].name;
+        var location = reports[j].location;
+        var message = reports[j].message;
+        console.log(name);
+        
+        newItem.innerText = `${message}` + " - " + `${location}` + " - " + `${name}` + '\n';
+
+        results.appendChild(newItem);
+        
      }
 
-     console.log(data.val());
     
  }
 
@@ -34,3 +45,7 @@ const config = {
      console.log('Error!');
      console.log(error);
  }
+
+
+ 
+
