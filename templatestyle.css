@@ -56,6 +56,8 @@ body {
   font-family: "Niconne", cursive;
   font-size: 2em;
   text-decoration: none;
+  display: grid;
+  justify-content: center;
 }
 
 .nav {
@@ -67,6 +69,9 @@ body {
 .nav-e {
   border: 1px solid white;
   text-decoration: none;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .nav-e:hover {
