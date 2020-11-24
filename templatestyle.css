@@ -10,7 +10,7 @@
 
 html,
 body {
-  background-color: #333;
+  background-color: #c0392b;
   height: 100%;
   margin: 0;
 }
@@ -20,13 +20,13 @@ body {
   font-size: 25px;
   padding: 0.5%;
   margin: 0.5%;
-  background-color: #379ad6;
+  background-color: #e74c3c;
   /* color: #222; */
   border: 1px solid white;
 }
 
 .grid-item:nth-child(odd) {
-  background-color: #5bbdfa;
+  background-color: #e67e22;
 }
 
 .body-container {
