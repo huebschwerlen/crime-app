@@ -1,8 +1,11 @@
+//url for carto database -OpenDataPhilly
+//Only grabbing incidents 
 const url = "https://heathhan.carto.com/api/v2/sql?q=SELECT location_block, text_general_code, dispatch_date_time FROM incidents_part1_part2 ORDER BY dispatch_date_time";
 
+//Grab element from HTML
 const apifeed = document.getElementById("incidents");
 
-
+//post method implementation - connect to API
 async function postData(temp = '') {
     const res = await fetch(temp, {
         method: 'POST',
@@ -20,6 +23,7 @@ async function postData(temp = '') {
     return res.json();
 }
 
+
 postData(url) 
     //fetch(url)
     //.then(res => res.json())
@@ -29,6 +33,7 @@ postData(url)
 
 });
 
+//Function to initialize our 
 function initialize(incidents) {
     for(let i = 0; i < 50; ++i) {
         const newItem = document.createElement("li")
@@ -39,7 +44,7 @@ function initialize(incidents) {
         
         console.log(location, date_time, event);
     
-        newItem.textContent = `${location}` + " - " + `${date_time}`;
+        newItem.textContent = `${location}` + " - " + `${date_time}` + " - " + `${event}`;
         apifeed.appendChild(newItem);
     };
 };
