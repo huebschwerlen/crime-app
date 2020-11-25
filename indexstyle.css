@@ -34,6 +34,10 @@ p {
 .repres {
   overflow: scroll;
 }
+
+.incidents {
+  overflow: scroll;
+}
 /* CONTENT END */
 
 @media only screen and (max-width: 800px) and (min-width: 375px) {
