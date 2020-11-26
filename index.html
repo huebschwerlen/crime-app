@@ -34,27 +34,15 @@
         <div class="grid-item content">
             <!-- MAP -->
             <div class="grid-item map">
-                MAP
-                <div style="
-              border: 3px solid rgb(201, 0, 1);
-              overflow: hidden;
-              margin: 15px auto;
-              max-width: 736px;
-            ">
-                    <iframe scrolling="no" src="https://data.phila.gov/visualizations/crime-incidents" style="
-                border: 0px none;
-                margin-left: -948px;
-                height: 832px;
-                margin-top: -518px;
-                width: 1886px;
-              ">
+                <div class="iframe-container">
+                    <iframe scrolling="no" src="https://data.phila.gov/visualizations/crime-incidents">
                     </iframe>
                 </div>
             </div>
             <!-- API FEED -->
 
             <div class="grid-item apifeed" id="apifeed">API FEED
-            </br>
+                </br>
                 <select id="sort" onchange="sort()">
                     <option value="">--Please choose an option--</option>
                     <option value="100">Homicide-Criminal</option>

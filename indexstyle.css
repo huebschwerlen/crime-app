@@ -6,25 +6,48 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "api map"
+    "api com";
 }
 
 .map {
-  grid-row: 1/-1;
+  /* grid-row: 1/-1; */
+  grid-area: map;
 }
+
+.iframe-container {
+  border: 3px solid rgb(201, 0, 1);
+  overflow: hidden;
+  margin: 15px auto;
+  max-width: 736px;
+}
+
+iframe {
+  border: 0px none;
+  margin-left: -948px;
+  height: 832px;
+  margin-top: -518px;
+  width: 1886px;
+}
+
 .comfeed {
-  grid-column: 2/3;
-  grid-row: 1/2;
+  /* grid-column: 2/3;
+  grid-row: 1/2; */
+  grid-area: com;
   overflow: scroll;
   min-height: 400px;
   max-height: 500px;
 }
 
 .apifeed {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  overflow:scroll;
-  min-height: 400px;
-  max-height: 500px;
+  /* grid-column: 2/3;
+  grid-row: 2/3; */
+  grid-area: api;
+  overflow: scroll;
+  /* min-height: 400px;
+  max-height: 500px; */
+  font-size: 1rem;
 }
 
 p {
@@ -46,15 +69,17 @@ ol {
   max-height: 30px;
   /* overflow-y: scroll; */
   font-size: small;
-  margin: 10px; 
+  margin: 10px;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
+  /* font-size: 1rem; */
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
