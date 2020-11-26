@@ -92,14 +92,17 @@ function sort() {
     //Get the rows count
     var row = getCount();
     //console.log(row);
+    clearTable(0);
+    clearTable(1);
+    clearTable(2);
 
 
     //create new elements for each column of the table
-    const newItem_1= document.createElement("tr");
-    const newItem_2 = document.createElement("tr"); 
-    const newItem_3 = document.createElement("tr"); 
+    const newItem_1= document.createElement("td");
+    const newItem_2 = document.createElement("td"); 
+    const newItem_3 = document.createElement("td"); 
     
-    console.log(x);
+    //console.log(x);
     //Homicides
     if(x == "100") {
 
@@ -634,4 +637,14 @@ function getCount() {
     }
     
     return totalRowCount/3-1;
+}
+
+//clear table
+function clearTable(num) {
+    //var Table = document.getElementById("table");
+    //Table.innerHTML = "";
+
+
+    var bodyRef = document.getElementById('table').getElementsByTagName('td')[num]; 
+    bodyRef.innerHTML = '';
 }
