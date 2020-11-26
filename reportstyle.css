@@ -22,6 +22,9 @@
 
 .title {
   grid-row: 1/2;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .form {
@@ -42,3 +45,47 @@
 }
 
 /* CONTENT END */
+
+/* MEDIA QUERY for 700px-width and BELOW */
+@media only screen and (max-width: 800px) {
+  .body-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    display: unset;
+    font-size: 1.2em;
+  }
+
+  .logo {
+    padding: 4%;
+  }
+
+  .nav-e {
+    padding: 4%;
+  }
+
+  .forminfo {
+    font-size: 1.2em;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "form"
+      "forminfo";
+  }
+
+  .title {
+    font-size: 0.8em;
+  }
+
+  .forminfo {
+    grid-area: forminfo;
+  }
+
+  .form-parent {
+    grid-area: form;
+  }
+}
