@@ -41,6 +41,29 @@ p {
 .incidents {
   overflow: scroll;
 }
+
+ol {
+  max-height: 30px;
+  /* overflow-y: scroll; */
+  font-size: small;
+  margin: 10px; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: small;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 /* CONTENT END */
 
 @media only screen and (max-width: 800px) and (min-width: 375px) {
