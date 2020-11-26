@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crime</title>
     <link rel="stylesheet" href="indexstyle.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+
     <script src="http://vizw.it/scripts/vizwit-embed.js"></script>
 </head>
 
@@ -41,17 +39,18 @@
               margin: 15px auto;
               max-width: 736px;
             ">
-                 <iframe scrolling="no" src="https://data.phila.gov/visualizations/crime-incidents" style="
+                    <iframe scrolling="no" src="https://data.phila.gov/visualizations/crime-incidents" style="
                 border: 0px none;
                 margin-left: -948px;
                 height: 832px;
                 margin-top: -518px;
                 width: 1886px;
               ">
-                    </iframe> 
+                    </iframe>
                 </div>
             </div>
             <!-- API FEED -->
+
             <div class="grid-item apifeed" id="apifeed">API FEED
                 <table id="table">
                     <tr>
@@ -67,7 +66,7 @@
                 </table>
                 <ol id="incidents"></ol>
             </div>
-          
+
 
             <!-- COMMUNITY FEED -->
             <div class="grid-item comfeed" id="comfeed">
@@ -87,7 +86,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
     <script src="reports_data.js"></script>
-    <script src="incidents.js"></script>  
+    <script src="incidents.js"></script>
 </body>
 
 </html>
