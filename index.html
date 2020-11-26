@@ -55,7 +55,7 @@
 
             <div class="grid-item apifeed" id="apifeed">API FEED
             </br>
-                <select id="sort">
+                <select id="sort" onchange="sort()">
                     <option value="">--Please choose an option--</option>
                     <option value="100">Homicide-Criminal</option>
                     <option value="100">Homicide-Justifiable</option>
@@ -91,14 +91,13 @@
                     <option value="2500">Vagrancy/Loitering</option>
                     <option value="2600">All Other Offenses</option>
                 </select>
-                <input type="submit" value="Select" onchange="sort()" id="selectBtn">
                 <table id="table">
                     <tr>
                         <th>Incident</th>
                         <th>Location</th>
                         <th>Date & Time</th>
                     </tr>
-                    <tr>
+                    <tr class="t_incidents">
                         <td id="incident"></td>
                         <td id="location"></td>
                         <td id="date_time"></td>
