@@ -73,25 +73,28 @@
                     <!-- Added id to form **HH-->
                     <form class="actform" id="actform" action="" method="post">
 
-                        <p>
+                        <div class="name">
                             <!-- NAME FIELD -->
                             <label for="name" class="nameLabel">NAME:</label>
                             <input type="text" id="nameInput" name="nameInput">
-                        </p>
-                        <p>
+                        </div>
+                        <div class="location">
                             <!-- LOCATION FIELD -->
                             <label for="location" class="locationLabel">LOCATION:</label>
                             <input type="text" id="locationInput" name="nameInput">
-                        </p>
-                        <p>
+                        </div>
+                        <div class="message">
                             <!-- MESSAGE FIELD -->
                             <label for="message" class="msgLabel">DESCRIPTION:</label>
                             <textarea name="msgInput" id="messageInput"></textarea>
-                        </p>
-                        <p>
-                            <button type="submit" onclick="myFunction()">SUBMIT</button>
-                            <button type="reset"> RESET</button>
-                        </p>
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div class="buttons">
+                            <button class="submit" type="submit" onclick="myFunction()">SUBMIT</button>
+                            <button class="reset" type="reset"> RESET</button>
+                        </div>
+
 
                     </form>
                 </div>

@@ -32,12 +32,12 @@
   display: grid;
 }
 
-.actform p {
+/* .actform p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 4%;
   padding: 5%;
-}
+} */
 
 .actform button {
   grid-column: 2/3;
@@ -67,6 +67,7 @@
 
   .forminfo {
     font-size: 1.2em;
+    grid-area: forminfo;
   }
 
   .content {
@@ -81,11 +82,65 @@
     font-size: 0.8em;
   }
 
-  .forminfo {
-    grid-area: forminfo;
-  }
-
   .form-parent {
     grid-area: form;
   }
+
+  #actform {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "name"
+      "location"
+      "message"
+      "buttons";
+  }
+/* 
+  p {
+    display: grid;
+  } */
+
+  .name {
+    grid-area: name;
+    display: grid;
+    align-content: baseline;
+    padding-top: 2em;
+  }
+  
+  .nameLabel {
+    display: grid;
+    align-content: end;
+    line-height: 2em;
+  }
+
+  #nameInput {
+    height: 3em;
+  }
+
+  .location {
+    grid-area: location;
+  }
+
+  .message {
+    grid-area: message;
+  }
+
+  /* .buttons {
+    grid-area: buttons;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; */
+    justify-content: center;
+    align-content: center;
+  }
+
+  .submit {
+    position: relative;
+    float: left;
+  }
+
+  .reset {
+    position: relative;
+    float: right;
+  } */
 }
