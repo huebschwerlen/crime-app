@@ -11,6 +11,11 @@
   display: grid;
   grid-row: 1/-1;
   grid-column: 1/2;
+  padding: unset;
+}
+
+.background {
+  padding: 3rem;
 }
 
 .form-parent {
@@ -32,13 +37,6 @@
   display: grid;
 }
 
-/* .actform p {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 4%;
-  padding: 5%;
-} */
-
 .actform button {
   grid-column: 2/3;
   font-weight: 600;
@@ -46,7 +44,55 @@
 
 /* CONTENT END */
 
-/* MEDIA QUERY for 700px-width and BELOW */
+/* MEDIA QUERY for 800px-width and ABOVE */
+@media only screen and (min-width: 800px) {
+  form {
+    padding: 0.7rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-box {
+    padding: 0.9rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  input {
+    height: 2rem;
+  }
+
+  textarea {
+    height: 8rem;
+  }
+
+  label {
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .forminfo {
+    font-size: 1.4rem;
+    background-image: url(./imgs/phillyNightSkyline.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background {
+    background-color: rgba(4, 15, 78, 0.7);
+    color: ivory;
+  }
+}
+
+/* MEDIA QUERY for 800px-width and BELOW */
 @media only screen and (max-width: 800px) {
   .body-container {
     grid-template-columns: 1fr;
@@ -65,11 +111,6 @@
     padding: 4%;
   }
 
-  .forminfo {
-    font-size: 1.2em;
-    grid-area: forminfo;
-  }
-
   .content {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -78,69 +119,61 @@
       "forminfo";
   }
 
+  .forminfo {
+    grid-area: forminfo;
+    font-size: 1.4rem;
+    background-image: url(./imgs/phillyNightSkyline.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background {
+    background-color: rgba(4, 15, 78, 0.7);
+    color: ivory;
+  }
+
   .title {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .form-parent {
     grid-area: form;
+    grid-template-rows: 0.2fr 1fr;
   }
 
-  #actform {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-      "name"
-      "location"
-      "message"
-      "buttons";
-  }
-/* 
-  p {
-    display: grid;
-  } */
-
-  .name {
-    grid-area: name;
-    display: grid;
-    align-content: baseline;
-    padding-top: 2em;
-  }
-  
-  .nameLabel {
-    display: grid;
-    align-content: end;
-    line-height: 2em;
-  }
-
-  #nameInput {
-    height: 3em;
-  }
-
-  .location {
-    grid-area: location;
-  }
-
-  .message {
-    grid-area: message;
-  }
-
-  /* .buttons {
-    grid-area: buttons;
+  form {
+    padding: 0.7rem 0.5rem;
     display: flex;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; */
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
   }
 
-  .submit {
-    position: relative;
-    float: left;
+  .form-box {
+    padding: 0.9rem 0.5rem;
+    display: flex;
+    flex-direction: column;
   }
 
-  .reset {
-    position: relative;
-    float: right;
-  } */
+  input,
+  label,
+  button,
+  textarea {
+    padding: 0.3rem 0.3rem;
+    font-size: 1.2rem;
+    color: indigo;
+  }
+
+  button {
+    height: 3rem;
+  }
+
+  label {
+    display: none;
+  }
+
+  .form-box textarea {
+    /* flex-basis: 100%; */
+    height: 6rem;
+  }
 }
