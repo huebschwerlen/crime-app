@@ -3,6 +3,7 @@
 const url = "https://heathhan.carto.com/api/v2/sql?q=SELECT location_block, text_general_code, dispatch_date_time FROM incidents_part1_part2 ORDER BY dispatch_date_time";
 
 //Grab element from HTML
+//For table get all three different columns
 //const apifeed = document.getElementById("incidents");
 const table_1 = document.getElementById("incident");
 const table_2 = document.getElementById("location");
@@ -39,26 +40,34 @@ postData(url)
 //Function to initialize our data and place it in the API Feed div
 function initialize(incidents) {
     //for loop to set the datafrom API
-    for(let i = 0; i < 100; ++i) {
+    for(let i = 0; i < 50/*incidents.rows.length*/; ++i) {
         //const newItem = document.createElement("li")
+
+        //create new elements for each column of the table
         const newItem_1= document.createElement("tr");
         const newItem_2 = document.createElement("tr"); 
         const newItem_3 = document.createElement("tr"); 
+
+        //grab data from API into variables
         var element = incidents.rows[i];
         var location = element.location_block;
         var date_time = element.dispatch_date_time;
         var event = element.text_general_code;
         
+        //Output and append the crime event to the table
         newItem_1.textContent = `${event}`;
         table_1.appendChild(newItem_1);
 
+        //Output and append the location of the crime to the table
         newItem_2.textContent = `${location}`;
         table_2.appendChild(newItem_2);
 
+        //Output and append the date & time to the table
         newItem_3.textContent = `${date_time}`;
         table_3.appendChild(newItem_3); 
 
 
+        //code for loading without table
         //console.log(location, date_time, event); 
         //output data
         //newItem.textContent = `${event}` + " - " + `${location}` + " - " + `${date_time}`;
