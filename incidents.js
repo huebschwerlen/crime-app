@@ -641,10 +641,6 @@ function getCount() {
 
 //clear table
 function clearTable(num) {
-    //var Table = document.getElementById("table");
-    //Table.innerHTML = "";
-
-
-    var bodyRef = document.getElementById('table').getElementsByTagName('td')[num]; 
-    bodyRef.innerHTML = '';
+    var Table = document.getElementById('table').getElementsByTagName('td')[num]; 
+    Table.innerHTML = '';
 }
