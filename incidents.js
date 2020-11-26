@@ -1,6 +1,6 @@
 //url for carto database -OpenDataPhilly
 //Only grabbing incidents 
-const url = "https://heathhan.carto.com/api/v2/sql?q=SELECT location_block, text_general_code, dispatch_date_time FROM incidents_part1_part2 ORDER BY dispatch_date_time";
+const url = "https://heathhan.carto.com/api/v2/sql?q=SELECT location_block, text_general_code, dispatch_date_time, ucr_general FROM incidents_part1_part2 ORDER BY dispatch_date_time";
 
 //Grab element from HTML
 //For table get all three different columns
@@ -53,6 +53,9 @@ function initialize(incidents) {
         var location = element.location_block;
         var date_time = element.dispatch_date_time;
         var event = element.text_general_code;
+        var ucr = element.ucr_general;
+
+        console.log(ucr);
         
         //Output and append the crime event to the table
         newItem_1.textContent = `${event}`;
@@ -75,3 +78,9 @@ function initialize(incidents) {
         //apifeed.appendChild(newItem);
     };
 };
+
+
+//Function for when user selects a type of crime
+function sort() {
+    var x = document.getElementById("sort").value;
+}
