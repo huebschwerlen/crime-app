@@ -87,7 +87,7 @@ function initialize(incidents) {
 };
 
 
-//Function for when user selects a type of crime
+//Function for when user selects a type of crime and called onchange
 function sort() {
     var x = document.getElementById("sort").value;
 
