@@ -25,8 +25,23 @@ function submitReport(event) {
     var location = getInput('locationInput');
     var message = getInput('messageInput');
 
-    //save to firebase database
-    saveReports(name, location, message);
+    //check if required fields are filled out
+    if(name == "" || location == "" || message ==""){
+        alert("Please fill out required fields");
+    }
+    //check if they conatin special characters - to prevent scripts being added
+    else if(name.includes("<") || name.includes("$") || location.includes(">") || location.includes("$") || message.includes("$") || message.includes(">")) {
+        alert ("Fields cannot conatain special characters ex:(<, >, $)")
+    }
+    //submit report to firebase database and let user know 
+    else {
+        //save to firebase database
+        saveReports(name, location, message);
+
+        //Let user know their report was submitted
+        alert("Incident reported!"); 
+    }
+
 
 }
 
@@ -46,10 +61,9 @@ function saveReports(name, location, message){
     })
 }
 
-//alert for when form is submitted
+//refresh page on submit to clear form
 function onSubmit() {
     location.reload();
 
-    alert("Your crime has been reported!"); 
 }
 

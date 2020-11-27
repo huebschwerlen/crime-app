@@ -102,7 +102,6 @@ function sort() {
     const newItem_2 = document.createElement("tr"); 
     const newItem_3 = document.createElement("tr"); 
     
-    //console.log(x);
 
     //Homicides
     if(x == "100") {
@@ -649,6 +648,8 @@ function sort() {
 
 //Function to clear table
 function clearTable(num) {
+    //get element
     var Table = document.getElementById('table').getElementsByTagName('td')[num]; 
+    //clear the elements
     Table.innerHTML = '';
 }
