@@ -44,7 +44,6 @@ postData(url)
 function initialize(incidents) {
     //for loop to set the datafrom API
     for(let i = 0; i < incidents.rows.length; ++i) {
-        //const newItem = document.createElement("li")
 
         //create new elements for each column of the table
         const newItem_1= document.createElement("tr");
@@ -76,12 +75,15 @@ function initialize(incidents) {
 
 
         //code for loading without table
+        //const newItem = document.createElement("li")
         //console.log(location, date_time, event); 
         //output data
         //newItem.textContent = `${event}` + " - " + `${location}` + " - " + `${date_time}`;
         //Append the dom 
         //apifeed.appendChild(newItem);
     };
+
+    console.log(array);
 };
 
 
@@ -94,21 +96,21 @@ function sort() {
     clearTable(1);
     clearTable(2);
 
-    console.log(array);
+    //console.log(array);
     //create new elements for each column of the table
-    const newItem_1= document.createElement("td");
-    const newItem_2 = document.createElement("td"); 
-    const newItem_3 = document.createElement("td"); 
+    const newItem_1= document.createElement("tr");
+    const newItem_2 = document.createElement("tr"); 
+    const newItem_3 = document.createElement("tr"); 
     
     //console.log(x);
 
-    //for(let i = 0; i < array.length; ++i) {
     //Homicides
     if(x == "100") {
 
        for(let i = 0; i < array.length; ++i) {
-            //console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "100") {
+                console.log(array[i].ucr_general);
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
                 table_1.appendChild(newItem_1);
@@ -130,7 +132,7 @@ function sort() {
     //Rape
     else if(x == "200") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "200") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -150,7 +152,7 @@ function sort() {
     //Robbery
     else if(x == "300") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+           
             if(array[i].ucr_general == "300") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -170,7 +172,7 @@ function sort() {
     //Agg assault
     else if(x == "400") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "400") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -190,7 +192,7 @@ function sort() {
     //Burglary
     else if(x == "500") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+          
             if(array[i].ucr_general == "500") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -210,8 +212,9 @@ function sort() {
     //Theft
     else if(x == "600") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+           
             if(array[i].ucr_general == "600") {
+                console.log(array[i].ucr_general);
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
                 table_1.appendChild(newItem_1);
@@ -232,7 +235,7 @@ function sort() {
     //Motor vehicle theft
     else if(x == "700") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "700") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -252,7 +255,7 @@ function sort() {
     //Other assaults
     else if(x == "800") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "800") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -272,7 +275,7 @@ function sort() {
     //Arson
     else if(x == "900") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "900") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -292,7 +295,7 @@ function sort() {
     //Forgery/counterfeiting
     else if(x == "1000") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1000") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -312,7 +315,7 @@ function sort() {
     //Fraud
     else if(x == "1100") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1100") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -332,7 +335,7 @@ function sort() {
     //Embezzlement
     else if(x == "1200") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1200") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -352,7 +355,7 @@ function sort() {
     //Receiving stolen property
     else if(x == "1300") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1300") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -372,7 +375,7 @@ function sort() {
     //Vandalism/criminal mischief
     else if(x == "1400") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+           
             if(array[i].ucr_general == "1400") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -392,7 +395,7 @@ function sort() {
     //Weapon violations
     else if(x == "1500") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1500") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -412,7 +415,7 @@ function sort() {
     //Prostitution - commercial
     else if(x == "1600") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1600") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -432,7 +435,7 @@ function sort() {
     //Other sex offenses
     else if(x == "1700") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1700") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -452,7 +455,7 @@ function sort() {
     //Narcotic/drug law violations
     else if(x == "1800") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1800") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -472,7 +475,7 @@ function sort() {
     //Gambling violations
     else if(x == "1900") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "1900") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -492,7 +495,7 @@ function sort() {
     //Offenses against family/children
     else if(x == "2000") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "2000") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -512,7 +515,7 @@ function sort() {
     //DUI
     else if(x == "2100") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "2100") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -532,7 +535,7 @@ function sort() {
     //Liquor law violations
     else if(x == "2200") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "2200") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -552,7 +555,7 @@ function sort() {
     //Public drunkenness
     else if(x == "2300") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "2300") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -572,7 +575,7 @@ function sort() {
     //Disorderly conduct
     else if(x == "2400") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "2400") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -592,7 +595,7 @@ function sort() {
     //Vagrancy/loitering
     else if(x == "2500") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+            
             if(array[i].ucr_general == "2500") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -612,7 +615,7 @@ function sort() {
     //All other offenses
     else if(x == "2600") {
         for(let i = 0; i < array.length; ++i) {
-            console.log(array[i].ucr_general);
+           
             if(array[i].ucr_general == "2600") {
                 //Output and append the crime event to the table
                 newItem_1.textContent = `${array[i].text_general_code}`;
@@ -629,7 +632,7 @@ function sort() {
        } 
     } 
 
-//}
+
 }
 
 //function to get rows count
