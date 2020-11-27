@@ -47,7 +47,9 @@ function saveReports(name, location, message){
 }
 
 //alert for when form is submitted
-function myFunction() {
+function onSubmit() {
+    location.reload();
+
     alert("Your crime has been reported!"); 
 }
 
