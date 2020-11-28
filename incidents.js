@@ -43,7 +43,7 @@ postData(url)
 //Function to initialize our data and place it in the API Feed div
 function initialize(incidents) {
     //for loop to set the datafrom API
-    for(let i = 0; i < incidents.rows.length; ++i) {
+    for(let i = 0; i < 20/*incidents.rows.length*/; ++i) {
 
         //create new elements for each column of the table
         const newItem_1= document.createElement("tr");
