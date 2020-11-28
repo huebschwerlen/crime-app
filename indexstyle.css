@@ -11,6 +11,8 @@
     "api com";
 }
 
+/* MAP START */
+
 .map {
   /* grid-row: 1/-1; */
   grid-area: map;
@@ -31,38 +33,29 @@ iframe {
   width: 1886px;
 }
 
+/* MAP END */
+
+/* COM FEED START` */
 .comfeed {
   /* grid-column: 2/3;
   grid-row: 1/2; */
   grid-area: com;
   overflow: scroll;
   min-height: 400px;
-  max-height: 500px;
-}
-
-.apifeed {
-  /* grid-column: 2/3;
-  grid-row: 2/3; */
-  grid-area: api;
-  overflow: scroll;
-  /* min-height: 400px;
-  max-height: 500px; */
-  font-size: 1rem;
-}
-
-p {
-  max-height: 30px;
-  /* overflow-y: scroll; */
-  font-size: small;
-  margin: 10px;
+  max-height: 900px;
 }
 
 .repres {
   overflow: scroll;
 }
 
-.incidents {
-  overflow: scroll;
+/* COM FEED END` */
+
+p {
+  max-height: 30px;
+  /* overflow-y: scroll; */
+  font-size: small;
+  margin: 10px;
 }
 
 ol {
@@ -72,10 +65,65 @@ ol {
   margin: 10px;
 }
 
-table {
-  border-collapse: collapse;
+/* API FEED START */
+
+.apifeed {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  grid-area: api;
+  overflow: hidden;
+  /* min-height: 400px; */
+  max-height: 900px;
+  font-size: 1rem;
+}
+
+.fixed_header {
   width: 100%;
-  /* font-size: 1rem; */
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.fixed_header tbody {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  height: 800px;
+}
+
+.fixed_header thead tr {
+  display: block;
+}
+
+.fixed_header thead {
+  background: black;
+  color: #fff;
+}
+
+.fixed_header th,
+.fixed_header td {
+  padding: 5px;
+  text-align: left;
+  width: 150px;
+}
+
+/* table {
+  border-collapse: collapse;
+  width: 100%; */
+
+/* table-layout: fixed; */
+
+/* font-size: 1rem; */
+/* } */
+
+/* thead tr {
+  display: block;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  color: white;
+  background-color: black;
 }
 
 td,
@@ -86,11 +134,22 @@ th {
   font-size: small;
 }
 
+tbody {
+  display: block;
+  overflow: auto;
+  height: 200px;
+  width: 100%;
+}
+
 tr:nth-child(even) {
   background-color: #dddddd;
-}
+} */
+
+/* API FEED END */
+
 /* CONTENT END */
 
+/* MEDIA Qs */
 @media only screen and (max-width: 800px) and (min-width: 375px) {
   .body-container {
     grid-template-columns: 1fr;

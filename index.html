@@ -32,14 +32,18 @@
 
         <!-- CONTENT START -->
         <div class="grid-item content">
-            <!-- MAP -->
+
+            <!-- MAP START-->
             <div class="grid-item map">
                 <div class="iframe-container">
                     <iframe scrolling="no" src="https://data.phila.gov/visualizations/crime-incidents">
                     </iframe>
                 </div>
             </div>
-            <!-- API FEED -->
+            <!-- MAP END -->
+
+
+            <!-- API FEED START-->
 
             <div class="grid-item apifeed" id="apifeed">API FEED
                 </br>
@@ -80,30 +84,36 @@
                     <option value="2600">All Other Offenses</option>
                 </select>
                 <a href="index.html">Clear</a>
-                <table id="table">
-                    <thread>
+                <table id="table" class="fixed_header">
+                    <thead id="thead">
                         <tr>
                             <th>Incident</th>
                             <th>Location</th>
                             <th>Date & Time</th>
-                         </tr>
-                    </thread>
-                    <tr class="t_incidents">
-                        <td id="incident"></td>
-                        <td id="location"></td>
-                        <td id="date_time"></td>
-                    </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="t_incidents">
+                            <td id="incident"></td>
+                            <td id="location"></td>
+                            <td id="date_time"></td>
+                        </tr>
+                    </tbody>
                 </table>
                 <!--<ol id="incidents"></ol>-->
             </div>
+            <!-- API FEED END-->
 
 
-            <!-- COMMUNITY FEED -->
+            <!-- COMMUNITY FEED START -->
             <div class="grid-item comfeed" id="comfeed">
                 COMMUNITY FEED
                 <div id="repres"></div>
             </div>
         </div>
+        <!-- COMMUNITY FEED END -->
+
+
         <!-- CONTENT END -->
 
         <!-- FOOTER START -->
