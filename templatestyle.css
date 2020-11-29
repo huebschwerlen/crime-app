@@ -58,6 +58,7 @@ body {
   justify-content: center;
   align-content: center;
   font-family: "Berkshire Swash", cursive;
+  color: black;
   /* color: #163f79; */
 }
 
@@ -75,12 +76,20 @@ body {
   align-content: center;
   font-weight: 600;
   font-size: 1.3em;
+  color: black;
 }
 
 .nav-e:hover {
   /* border: 1px solid white; */
   text-emphasis: bold;
+  background-color: white;
 }
+.logo:hover {
+  /* border: 1px solid white; */
+  text-emphasis: bold;
+  background-color: white;
+}
+
 /* HEADER END */
 
 /* / */
