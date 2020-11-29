@@ -140,7 +140,7 @@ tr:nth-child(even) {
 1400 */
 
 /* MEDIA QUERY for 700px-width and BELOW */
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1000px) {
   .body-container {
     grid-template-columns: 1fr;
   }
