@@ -1,6 +1,7 @@
 //url for carto database -OpenDataPhilly
 //Only grabbing incidents by location, event, date and time, and UCR number, in descending order
-const url = "https://heathhan.carto.com/api/v2/sql?q=SELECT location_block, text_general_code, dispatch_date_time, ucr_general FROM incidents_part1_part2 ORDER BY dispatch_date_time DESC";
+const url = "https://heathhan.carto.com/api/v2/sql?q=SELECT location_block, text_general_code, dispatch_date_time, ucr_general FROM incidents_part1_part2_2 ORDER BY dispatch_date_time DESC";
+
 
 //Grab element from HTML
 //For table get all three different columns
