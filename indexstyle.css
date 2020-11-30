@@ -109,7 +109,7 @@ ol {
   display: block;
   width: 100%;
   overflow: auto;
-  /* height: 80%; */
+  height: 74em;
 }
 
 .fixed_header thead tr {
