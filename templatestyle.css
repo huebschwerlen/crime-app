@@ -82,12 +82,14 @@ body {
 .nav-e:hover {
   /* border: 1px solid white; */
   text-emphasis: bold;
-  background-color: white;
+  background-color: #607694;
+  color: #cdd5df;
 }
 .logo:hover {
   /* border: 1px solid white; */
   text-emphasis: bold;
-  background-color: white;
+  background-color: #607694;
+  color: #cdd5df;
 }
 
 /* HEADER END */
