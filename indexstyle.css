@@ -34,11 +34,16 @@ select {
 
 .clear {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 500;
   padding: 0.2em;
   color: black;
   background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 2px;
+  border: 1px solid black;
 }
 
 iframe {
@@ -61,10 +66,12 @@ iframe {
   max-height: 654px;
   padding: 1.5em;
   font-size: 1em;
+  color: black;
 }
 
 .comFeedTitle {
   font-weight: 600;
+  color: black;
 }
 
 .repres {
@@ -279,6 +286,10 @@ tr:nth-child(even) {
     justify-content: center;
     align-content: center;
     margin-bottom: 1em;
+    border-radius: 8px;
+    position: unset;
+    margin-left: unset;
+    border: 1px solid black;
   }
 
   #sort {
