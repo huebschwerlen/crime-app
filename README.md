@@ -10,6 +10,7 @@ Built with: HTML, CSS and Javascript
 
 
 Resources: 
+
 https://www.youtube.com/watch?v=PP4Tr0l08NE
 
 https://www.youtube.com/watch?v=6yAAV-uP0po&t
