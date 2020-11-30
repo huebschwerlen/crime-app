@@ -63,6 +63,10 @@ iframe {
   font-size: 1em;
 }
 
+.comFeedTitle {
+  font-weight: 600;
+}
+
 .repres {
   overflow: scroll;
 }
@@ -129,18 +133,44 @@ ol {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-
 /* API FEED END */
 
 /* CONTENT END */
 
 /* MEDIA Qs */
-/* 460
-768 mid
-1400 */
+@media only screen and (max-width: 1564px) {
+  .fixed_header th,
+  .fixed_header td {
+    font-size: 0.9em;
+  }
+}
 
-/* MEDIA QUERY for 700px-width and BELOW */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
+  .iframe-container {
+    max-width: 100%;
+  }
+
+  .fixed_header th,
+  .fixed_header td {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 1264px) {
+  .fixed_header th,
+  .fixed_header td {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .fixed_header th,
+  .fixed_header td {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .body-container {
     grid-template-columns: 1fr;
   }
@@ -194,9 +224,7 @@ tr:nth-child(even) {
   }
 
   .fixed_header {
-    /* max-width: 686px; */
     width: 100%;
-    /* height: 10em; */
   }
 
   .fixed_header tbody {
@@ -227,7 +255,7 @@ tr:nth-child(even) {
 }
 
 @media only screen and (max-width: 652px) {
-  a.logo {
+  .logo {
     font-size: unset;
   }
 
