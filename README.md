@@ -2,7 +2,7 @@ The Philly Lookout Crime App
 
 Web App displays map from: https://data.phila.gov/visualizations/crime-incidents
 and police data from: https://cityofphiladelphia.github.io/carto-api-explorer/#incidents_part1_part2
-and displays live community crime reports submitted by citizens from the app. 
+and displays live community crime reports submitted by users from the app. 
 Crime report data submitted by users is stored on Firebase database.
 
 Final project for fullstack dev class. 
