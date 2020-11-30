@@ -12,7 +12,7 @@ Deployed at: https://huebschwerlen.github.io/crime-app/
 Team Members: Hannah Heath & Sam Huebschwerlen
 
 
-Built with: HTML, CSS and Javascript
+Built with: HTML, CSS and Javascript and uses Firebase for databse of user reports
 
 
 Resources: 
