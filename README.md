@@ -3,11 +3,10 @@ Final project for fullstack dev class.
 
 Deployed at: https://huebschwerlen.github.io/crime-app/
 
-Team Mmebers: Hannah Heath & Sam Huebschwerlen
+Team Members: Hannah Heath & Sam Huebschwerlen
 
 
-Description: 
-
+Built with: HTML, CSS and Javascript
 
 
 Resources: 
