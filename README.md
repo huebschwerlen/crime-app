@@ -11,5 +11,6 @@ Built with: HTML, CSS and Javascript
 
 Resources: 
 https://www.youtube.com/watch?v=PP4Tr0l08NE
-
-https://docs.google.com/document/d/1ztPm_k3zpRpb-H0_kBdNbbASFt_DJr48y_Ft_83JQ0g/edit
+https://www.youtube.com/watch?v=6yAAV-uP0po&t
+https://www.youtube.com/watch?v=gmQlK3kRft4&t
+https://www.youtube.com/watch?v=KOvGeFUHAC0&t
